@@ -1,0 +1,106 @@
+{
+  "source": {
+    "archive": "data\\raw\\ghostvision\\GhostVision_DatasetAndModels.zip",
+    "size_bytes": 898783834,
+    "sha256": "5d49fc25636dec449aa110c8f66c5c154aac02e38ceaa81e3ade520cab12558c"
+  },
+  "members": {
+    "total": 6696,
+    "images": 6674,
+    "txt_files": 3,
+    "yaml_files": 0,
+    "json_files": 6
+  },
+  "images_by_split": {
+    "test": 398,
+    "train": 5721,
+    "validation": 555
+  },
+  "labels_by_split": {
+    "other": 3
+  },
+  "annotations_by_split": {
+    "other": 4
+  },
+  "class_id_annotation_counts": {},
+  "matching": {
+    "matched_pairs": 0,
+    "missing_images_for_labels": 1,
+    "images_without_labels": 6674
+  },
+  "quality": {
+    "malformed_annotation_rows": 4,
+    "malformed_examples": [
+      {
+        "file": "gv-yolo26/class_names.txt",
+        "line": 1,
+        "content": "Crab-Pot",
+        "reason": "expected 5 YOLO fields"
+      },
+      {
+        "file": "gv-rf-detr/class_names.txt",
+        "line": 1,
+        "content": "background_class83422",
+        "reason": "expected 5 YOLO fields"
+      },
+      {
+        "file": "gv-rf-detr/class_names.txt",
+        "line": 2,
+        "content": "Crab-Pot",
+        "reason": "expected 5 YOLO fields"
+      },
+      {
+        "file": "gv-yolo12/class_names.txt",
+        "line": 1,
+        "content": "Crab-Pot",
+        "reason": "expected 5 YOLO fields"
+      }
+    ]
+  },
+  "metadata_candidates": [],
+  "sample_images": {
+    "test": [
+      "sss-crab-pot-detection-ds/test/baycove_07_06_png_jpg.rf.5a2e74f04f707fe66f050a3b61fcd7c2.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_07_png_jpg.rf.4c2d86c1becfaf0c5471fca9f6e3dbfb.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_08_png_jpg.rf.32a446e4a0993e4232cc9f94bd1d38a1.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_10_png_jpg.rf.e3b62b44fe8e5e4363b52351ba782b8f.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_13_png_jpg.rf.137a5b1526ba23daeba7d6fe7441692e.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_14_png_jpg.rf.3f8cedd2d50ef473a9c8ee632ec7f990.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_15_png_jpg.rf.7f81b82c41fae460608733f4c11ab936.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_16_png_jpg.rf.a0248faa15ab56af1a1d1935580b1d21.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_17_png_jpg.rf.dd61430e52c9454cb251302108464931.jpg",
+      "sss-crab-pot-detection-ds/test/baycove_07_20_png_jpg.rf.773345cba135e99394f19fba5608faf4.jpg"
+    ],
+    "train": [
+      "sss-crab-pot-detection-ds/train/baycove_01_18_png_jpg.rf.68c525012668cd138c2a5fca781abd24.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_01_18_png_jpg.rf.c7bfd517a6f8d8f6251dd51639309747.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_01_18_png_jpg.rf.f8b14ae49f3ff2ff88b51c37dffcff64.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_01_19_png_jpg.rf.6907c41731418a7903abf1c4778231b0.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_01_19_png_jpg.rf.8a7183728c8ab5beca8c49ea73545f35.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_01_19_png_jpg.rf.8cae22fff9e5a0cc849804a6c28a6a09.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_02_15_png_jpg.rf.347a8976e4bdb8f9bd9e34a7f73e7ee3.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_02_15_png_jpg.rf.6a6f4d7303a51349a95583115678a919.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_02_15_png_jpg.rf.ba0ba17e72f7a8586ebf90e355e75383.jpg",
+      "sss-crab-pot-detection-ds/train/baycove_02_16_png_jpg.rf.0f6aef97bbbbbb84a9c8641526fdf3cb.jpg"
+    ],
+    "validation": [
+      "sss-crab-pot-detection-ds/valid/Contact_0_sslo_png_jpg.rf.4cb071a566c5fb06fd1f597700261198.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_100_sslo_png_jpg.rf.0cdc1f62ac0c8580ad86b626c53b6374.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_101_sslo_png_jpg.rf.129d97ac37fee40e19e9fdd547125845.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_102_sslo_png_jpg.rf.dbbd50709d138d776c576688f3b97d0a.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_103_sslo_png_jpg.rf.53fe66a3739b5f18e390901f89cf481e.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_104_sslo_png_jpg.rf.22e4adfcabfab6cc53f6c4ec51d4099d.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_105_sslo_png_jpg.rf.4ef20d167e305a8cd5713496355c6f40.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_106_sslo_png_jpg.rf.c31dd588a8787b9aae6720c3b27be6d0.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_107_sslo_png_jpg.rf.339273b6c8d402e500d5dd1ba9452fba.jpg",
+      "sss-crab-pot-detection-ds/valid/Contact_108_sslo_png_jpg.rf.5358024cba9d3098fcb53c2c139429b1.jpg"
+    ]
+  },
+  "sample_labels": {
+    "other": [
+      "gv-yolo26/class_names.txt",
+      "gv-rf-detr/class_names.txt",
+      "gv-yolo12/class_names.txt"
+    ]
+  }
+}

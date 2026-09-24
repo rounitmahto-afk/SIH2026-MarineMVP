@@ -1,0 +1,44 @@
+﻿# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Real data - NEVER COMMIT
+data/raw/*
+data/derived/*
+storage/uploads/*
+storage/runs/*
+storage/reports/*
+ml/models/*/*.onnx
+ml/models/*/*.pt
+ml/models/*/*.pth
+ml/models/*/*.safetensors
+
+# Allow manifests
+!data/manifests/**
+!ml/models/**/README.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+# Ultralytics generated artifacts
+/yolo11n.pt
+
+# Ultralytics generated artifacts
+/runs/

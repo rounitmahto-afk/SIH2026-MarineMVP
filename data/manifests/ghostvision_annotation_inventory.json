@@ -1,0 +1,56 @@
+{
+  "source": {
+    "archive": "data\\raw\\ghostvision\\GhostVision_DatasetAndModels.zip",
+    "size_bytes": 898783834,
+    "sha256": "5d49fc25636dec449aa110c8f66c5c154aac02e38ceaa81e3ade520cab12558c"
+  },
+  "archive_counts": {
+    "members": 6696,
+    "images": 6674,
+    "json_files": 6,
+    "txt_files": 3
+  },
+  "annotation_files": [],
+  "dataset_records": {
+    "total_records": 0,
+    "records_by_split": {},
+    "matched_source_images": 0,
+    "images_without_annotation_record": 6674
+  },
+  "annotations": {
+    "total_annotations": 0,
+    "annotations_by_split": {},
+    "classes": []
+  },
+  "quality": {
+    "malformed_json_lines": 0,
+    "malformed_examples": []
+  },
+  "sample_annotation_records": [],
+  "json_file_samples": [
+    {
+      "file": "gv-yolo26/environment.json",
+      "size_bytes": 390
+    },
+    {
+      "file": "gv-yolo26/model_type.json",
+      "size_bytes": 79
+    },
+    {
+      "file": "gv-rf-detr/environment.json",
+      "size_bytes": 458
+    },
+    {
+      "file": "gv-rf-detr/model_type.json",
+      "size_bytes": 84
+    },
+    {
+      "file": "gv-yolo12/environment.json",
+      "size_bytes": 390
+    },
+    {
+      "file": "gv-yolo12/model_type.json",
+      "size_bytes": 80
+    }
+  ]
+}

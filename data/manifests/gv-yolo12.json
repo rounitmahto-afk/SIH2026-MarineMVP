@@ -1,0 +1,25 @@
+{
+  "source": {
+    "provider": "Hugging Face",
+    "repository": "PINGEcosystem/gv-yolo12",
+    "accessed_at_utc": "2026-09-24T12:53:57.656581+00:00"
+  },
+  "files": {
+    "class_names.txt": {
+      "sha256": "e31c0cc83171b4e074b63e65257f99a45f1aff40e70459370acd767596f58673",
+      "size_bytes": 8
+    },
+    "environment.json": {
+      "sha256": "b8aeb61a81d77f2ed9dac70560c33012290f506ac11604e8934ff5841be7632a",
+      "size_bytes": 390
+    },
+    "model_type.json": {
+      "sha256": "767ed3cad41ee650fa1e68d6cfca1976bcc7be43273e00ba2fb8f309a4aa52c3",
+      "size_bytes": 77
+    },
+    "weights.onnx": {
+      "sha256": "a5f76feff2ca683c4ff4738c3b27ac979489d8ad92e81373301ff1646d93f998",
+      "size_bytes": 37092960
+    }
+  }
+}

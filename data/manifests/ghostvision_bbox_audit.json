@@ -1,0 +1,524 @@
+{
+  "source": {
+    "archive": "data\\raw\\ghostvision\\GhostVision_DatasetAndModels.zip",
+    "records": 6674
+  },
+  "configuration": {
+    "boundary_tolerance_pixels": 1.0
+  },
+  "counts": {
+    "images_audited": 6674,
+    "total_bounding_boxes": 9311,
+    "valid": 9226,
+    "boundary_rounding": 85,
+    "substantial_mismatch": 0
+  },
+  "extremes": {
+    "max_x_overflow": 0.48099999999999454,
+    "max_y_overflow": 0.4779999999999518,
+    "max_negative_x": 0.0,
+    "max_negative_y": 0.0
+  },
+  "examples": [
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec16_wcp_ss_port_00053_png_jpg.rf.e169e93d1e337ed1fe1af8ef3c9952e9.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec16_wcp_ss_port_00053_png_jpg.rf.e169e93d1e337ed1fe1af8ef3c9952e9.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        598.0,
+        309.0,
+        42.015,
+        71.311
+      ],
+      "x_overflow": 0.014999999999986358,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec13_wcp_ss_port_00007_png_jpg.rf.1a117f6f7fe54a4f64dc73d6cbc1a254.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec13_wcp_ss_port_00007_png_jpg.rf.1a117f6f7fe54a4f64dc73d6cbc1a254.jpg",
+      "box_index": 1,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        597.0,
+        350.0,
+        43.4,
+        129.015
+      ],
+      "x_overflow": 0.39999999999997726,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec20_wcp_ss_port_00007_png_jpg.rf.9c11e03b9dc8a713b0e8fb426b3340f6.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec20_wcp_ss_port_00007_png_jpg.rf.9c11e03b9dc8a713b0e8fb426b3340f6.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        616.0,
+        380.0,
+        24.067,
+        38.607
+      ],
+      "x_overflow": 0.06700000000000728,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00028_png_jpg.rf.57aab39d2ba77bcae6378a59a0c1c9f8.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00028_png_jpg.rf.57aab39d2ba77bcae6378a59a0c1c9f8.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        182.0,
+        592.0,
+        95.0,
+        48.367
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.3669999999999618,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00027_png_jpg.rf.143c97cba5fd251b6932f23404484ed9.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00027_png_jpg.rf.143c97cba5fd251b6932f23404484ed9.jpg",
+      "box_index": 1,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        385.0,
+        577.0,
+        97.126,
+        63.478
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.4779999999999518,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00071_png_jpg.rf.9fc77ac5b21bf43c41af3316f63bb6a2.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00071_png_jpg.rf.9fc77ac5b21bf43c41af3316f63bb6a2.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        355.0,
+        567.0,
+        95.207,
+        73.467
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.46699999999998454,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_port_00037_png_jpg.rf.08cfb7d3345dae8a6cdfe58d10c80bdf.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_port_00037_png_jpg.rf.08cfb7d3345dae8a6cdfe58d10c80bdf.jpg",
+      "box_index": 1,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        629.0,
+        523.0,
+        11.259,
+        60.0
+      ],
+      "x_overflow": 0.25900000000001455,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00017_png_jpg.rf.a1b8a32fb154393d8af68f3d9786fcbb.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00017_png_jpg.rf.a1b8a32fb154393d8af68f3d9786fcbb.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        397.0,
+        596.0,
+        59.044,
+        44.267
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.26700000000005275,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec13_wcp_ss_port_00005_png_jpg.rf.741243549e0776250b0da5b03e973575.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec13_wcp_ss_port_00005_png_jpg.rf.741243549e0776250b0da5b03e973575.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        228.0,
+        575.0,
+        132.067,
+        65.207
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.20699999999999363,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00015_png_jpg.rf.659f55affe88dfcaa97cb759697583cb.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00015_png_jpg.rf.659f55affe88dfcaa97cb759697583cb.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        559.0,
+        106.0,
+        81.467,
+        91.304
+      ],
+      "x_overflow": 0.46699999999998454,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec11_wcp_ss_star_00036_png_jpg.rf.bfaca42b8263157c9b5f2ce70408357c.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec11_wcp_ss_star_00036_png_jpg.rf.bfaca42b8263157c9b5f2ce70408357c.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        592.0,
+        73.0,
+        48.267,
+        136.444
+      ],
+      "x_overflow": 0.26700000000005275,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_port_00021_png_jpg.rf.e3b931c2cd460b77ba8644f576a267cf.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_port_00021_png_jpg.rf.e3b931c2cd460b77ba8644f576a267cf.jpg",
+      "box_index": 4,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        173.0,
+        542.0,
+        104.593,
+        98.3
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.2999999999999545,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec17_wcp_ss_star_00014_png_jpg.rf.8050b4f867b9c42af757b0c8c246281b.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec17_wcp_ss_star_00014_png_jpg.rf.8050b4f867b9c42af757b0c8c246281b.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        503.0,
+        621.0,
+        38.0,
+        19.278
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.27800000000002,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec16_wcp_ss_port_00016_png_jpg.rf.cbee8d29b101e06156c7a95effad8166.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec16_wcp_ss_port_00016_png_jpg.rf.cbee8d29b101e06156c7a95effad8166.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        615.0,
+        450.0,
+        25.2,
+        60.126
+      ],
+      "x_overflow": 0.20000000000004547,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec7_wcp_ss_star_00026_png_jpg.rf.af6084ff1c46a7fcf9321321b2328a26.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec7_wcp_ss_star_00026_png_jpg.rf.af6084ff1c46a7fcf9321321b2328a26.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        615.0,
+        561.0,
+        25.333,
+        56.074
+      ],
+      "x_overflow": 0.33299999999997,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec6_wcp_ss_port_00005_png_jpg.rf.c85063cbc69dd176f40042c3da5f5876.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec6_wcp_ss_port_00005_png_jpg.rf.c85063cbc69dd176f40042c3da5f5876.jpg",
+      "box_index": 2,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        626.0,
+        337.0,
+        14.185,
+        28.133
+      ],
+      "x_overflow": 0.18499999999994543,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec3_wcp_ss_star_00036_png_jpg.rf.d8c5a652a2ef2a9b1043b8c651b6a5b4.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec3_wcp_ss_star_00036_png_jpg.rf.d8c5a652a2ef2a9b1043b8c651b6a5b4.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        630.0,
+        561.0,
+        10.267,
+        30.844
+      ],
+      "x_overflow": 0.26700000000005275,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec2_wcp_ss_star_00031_png_jpg.rf.fac902a3c8ddf7c476f238ef6c0d16d9.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec2_wcp_ss_star_00031_png_jpg.rf.fac902a3c8ddf7c476f238ef6c0d16d9.jpg",
+      "box_index": 1,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        28.0,
+        600.0,
+        87.311,
+        40.289
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.28899999999998727,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00018_png_jpg.rf.e911a0292717999382b186c6091cf7bc.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00018_png_jpg.rf.e911a0292717999382b186c6091cf7bc.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        636.0,
+        539.0,
+        4.222,
+        58.193
+      ],
+      "x_overflow": 0.22199999999998,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec16_wcp_ss_port_00053_png_jpg.rf.412c8036d28b5ad9616eec8f476e4018.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec16_wcp_ss_port_00053_png_jpg.rf.412c8036d28b5ad9616eec8f476e4018.jpg",
+      "box_index": 1,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        627.0,
+        100.0,
+        13.422,
+        23.067
+      ],
+      "x_overflow": 0.42200000000002547,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec20_wcp_ss_star_00011_png_jpg.rf.1c97a9f4df16bc489d35c2fd0c1471c9.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec20_wcp_ss_star_00011_png_jpg.rf.1c97a9f4df16bc489d35c2fd0c1471c9.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        342.0,
+        593.0,
+        47.63,
+        47.067
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.06700000000000728,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00016_png_jpg.rf.1371dd3f5195f03ad9f64771648838e3.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00016_png_jpg.rf.1371dd3f5195f03ad9f64771648838e3.jpg",
+      "box_index": 2,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        346.0,
+        574.0,
+        76.8,
+        66.156
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.15599999999994907,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec12_Sensor_Depth_wcp_ss_port_00041_png_jpg.rf.164c05354febf8fc7398c3ebd1ebf323.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec12_Sensor_Depth_wcp_ss_port_00041_png_jpg.rf.164c05354febf8fc7398c3ebd1ebf323.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        324.0,
+        620.0,
+        35.704,
+        20.093
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.09299999999996089,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec19_wcp_ss_star_00073_png_jpg.rf.f7a11d6decb1cb9cfbd6c2100192633c.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec19_wcp_ss_star_00073_png_jpg.rf.f7a11d6decb1cb9cfbd6c2100192633c.jpg",
+      "box_index": 0,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        353.0,
+        581.0,
+        99.837,
+        59.056
+      ],
+      "x_overflow": 0.0,
+      "y_overflow": 0.05600000000004002,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    },
+    {
+      "type": "boundary_rounding",
+      "split": "train",
+      "file_name": "Rec20_wcp_ss_star_00009_png_jpg.rf.db3b3b20a920b6f53bfc188f44f7f5db.jpg",
+      "archive_member": "sss-crab-pot-detection-ds/train/Rec20_wcp_ss_star_00009_png_jpg.rf.db3b3b20a920b6f53bfc188f44f7f5db.jpg",
+      "box_index": 2,
+      "category": "Crab-Pot",
+      "image_width": 640,
+      "image_height": 640,
+      "bbox": [
+        621.0,
+        501.0,
+        19.311,
+        52.437
+      ],
+      "x_overflow": 0.31100000000003547,
+      "y_overflow": 0.0,
+      "negative_x": 0.0,
+      "negative_y": 0.0
+    }
+  ]
+}

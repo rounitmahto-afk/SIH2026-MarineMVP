@@ -1,0 +1,50 @@
+{
+  "images": [
+    {
+      "file": "data\\raw\\ghostvision_smoke\\baycove_07_06_png_jpg.rf.5a2e74f04f707fe66f050a3b61fcd7c2.jpg",
+      "width": 640,
+      "height": 640,
+      "min": 0,
+      "max": 145,
+      "mean": 63.21551025390625,
+      "std": 18.482863768484783
+    },
+    {
+      "file": "data\\raw\\ghostvision_smoke\\baycove_07_07_png_jpg.rf.4c2d86c1becfaf0c5471fca9f6e3dbfb.jpg",
+      "width": 640,
+      "height": 640,
+      "min": 0,
+      "max": 135,
+      "mean": 46.9028125,
+      "std": 18.93846410757499
+    },
+    {
+      "file": "data\\raw\\ghostvision_smoke\\baycove_07_08_png_jpg.rf.32a446e4a0993e4232cc9f94bd1d38a1.jpg",
+      "width": 640,
+      "height": 640,
+      "min": 1,
+      "max": 159,
+      "mean": 54.91477294921875,
+      "std": 18.599501855156536
+    },
+    {
+      "file": "data\\raw\\ghostvision_smoke\\baycove_07_10_png_jpg.rf.e3b62b44fe8e5e4363b52351ba782b8f.jpg",
+      "width": 640,
+      "height": 640,
+      "min": 12,
+      "max": 150,
+      "mean": 80.54107666015625,
+      "std": 19.859517043477616
+    },
+    {
+      "file": "data\\raw\\ghostvision_smoke\\baycove_07_13_png_jpg.rf.137a5b1526ba23daeba7d6fe7441692e.jpg",
+      "width": 640,
+      "height": 640,
+      "min": 0,
+      "max": 205,
+      "mean": 70.5579443359375,
+      "std": 24.159775714420867
+    }
+  ],
+  "count": 5
+}

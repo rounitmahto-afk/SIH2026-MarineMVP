@@ -1,0 +1,34 @@
+{
+  "source": {
+    "archive": "GhostVision_DatasetAndModels.zip",
+    "zenodo_record": "10.5281/zenodo.20056679"
+  },
+  "purpose": "real-data-smoke-test",
+  "images": [
+    {
+      "archive_path": "sss-crab-pot-detection-ds/test/baycove_07_06_png_jpg.rf.5a2e74f04f707fe66f050a3b61fcd7c2.jpg",
+      "extracted_path": "data\\raw\\ghostvision_smoke\\baycove_07_06_png_jpg.rf.5a2e74f04f707fe66f050a3b61fcd7c2.jpg",
+      "size_bytes": 58367
+    },
+    {
+      "archive_path": "sss-crab-pot-detection-ds/test/baycove_07_07_png_jpg.rf.4c2d86c1becfaf0c5471fca9f6e3dbfb.jpg",
+      "extracted_path": "data\\raw\\ghostvision_smoke\\baycove_07_07_png_jpg.rf.4c2d86c1becfaf0c5471fca9f6e3dbfb.jpg",
+      "size_bytes": 55854
+    },
+    {
+      "archive_path": "sss-crab-pot-detection-ds/test/baycove_07_08_png_jpg.rf.32a446e4a0993e4232cc9f94bd1d38a1.jpg",
+      "extracted_path": "data\\raw\\ghostvision_smoke\\baycove_07_08_png_jpg.rf.32a446e4a0993e4232cc9f94bd1d38a1.jpg",
+      "size_bytes": 55905
+    },
+    {
+      "archive_path": "sss-crab-pot-detection-ds/test/baycove_07_10_png_jpg.rf.e3b62b44fe8e5e4363b52351ba782b8f.jpg",
+      "extracted_path": "data\\raw\\ghostvision_smoke\\baycove_07_10_png_jpg.rf.e3b62b44fe8e5e4363b52351ba782b8f.jpg",
+      "size_bytes": 46771
+    },
+    {
+      "archive_path": "sss-crab-pot-detection-ds/test/baycove_07_13_png_jpg.rf.137a5b1526ba23daeba7d6fe7441692e.jpg",
+      "extracted_path": "data\\raw\\ghostvision_smoke\\baycove_07_13_png_jpg.rf.137a5b1526ba23daeba7d6fe7441692e.jpg",
+      "size_bytes": 58017
+    }
+  ]
+}

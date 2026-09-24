@@ -1,0 +1,71 @@
+{
+  "manifest_version": "1.0",
+  "generated_at_utc": "2026-09-24T13:33:54.781721+00:00",
+  "source": {
+    "dataset_repository": "PINGEcosystem/sss-crab-pot-detection-ds",
+    "dataset_revision": "b6a36ec00c9bb0070f30be4c1dd6cbe139423cd4",
+    "image_archive": "data\\raw\\ghostvision\\GhostVision_DatasetAndModels.zip",
+    "image_archive_sha256": "5d49fc25636dec449aa110c8f66c5c154aac02e38ceaa81e3ade520cab12558c",
+    "image_archive_size_bytes": 898783834
+  },
+  "metadata_files": {
+    "train": {
+      "repository_path": "train/metadata.jsonl",
+      "local_path": "D:\\Projects\\SIH2026_MarineMVP\\data\\raw\\ghostvision_annotations\\train\\metadata.jsonl",
+      "size_bytes": 1129232,
+      "sha256": "846556a1a5bb70568520558b2099194868772c23dd4e437afad2b22a32898dc4"
+    },
+    "validation": {
+      "repository_path": "valid/metadata.jsonl",
+      "local_path": "D:\\Projects\\SIH2026_MarineMVP\\data\\raw\\ghostvision_annotations\\valid\\metadata.jsonl",
+      "size_bytes": 123010,
+      "sha256": "c72615c7381b68aa80c1c1f767de8767541e9f88310d57e7237975efec6c57f5"
+    },
+    "test": {
+      "repository_path": "test/metadata.jsonl",
+      "local_path": "D:\\Projects\\SIH2026_MarineMVP\\data\\raw\\ghostvision_annotations\\test\\metadata.jsonl",
+      "size_bytes": 76836,
+      "sha256": "e090a0080f567fb6b8071246cc232edfcb2fca96a49ab642816ec51905ce58cf"
+    }
+  },
+  "image_inventory": {
+    "total": 6674,
+    "duplicate_basenames": 0,
+    "duplicate_basename_examples": [],
+    "matched_annotation_images": 6674,
+    "unannotated_archive_images": 0,
+    "unannotated_examples": []
+  },
+  "records": {
+    "total": 6674,
+    "by_split": {
+      "train": 5721,
+      "validation": 555,
+      "test": 398
+    }
+  },
+  "annotations": {
+    "total": 9311,
+    "by_split": {
+      "train": 7469,
+      "validation": 1275,
+      "test": 567
+    },
+    "classes": [
+      {
+        "name": "Crab-Pot",
+        "count": 9311
+      }
+    ]
+  },
+  "validation": {
+    "invalid_records": 0,
+    "invalid_examples": [],
+    "missing_images": 0,
+    "missing_image_examples": [],
+    "duplicate_image_matches": 0,
+    "duplicate_image_examples": [],
+    "duplicate_annotation_records": 0,
+    "duplicate_annotation_examples": []
+  }
+}
