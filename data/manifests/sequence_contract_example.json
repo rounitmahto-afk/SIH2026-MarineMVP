@@ -1,0 +1,10 @@
+{
+  "contract": "verified_survey_frame_sequence",
+  "version": 1,
+  "requires_verified_frame_index": true,
+  "requires_sequence_id": true,
+  "requires_source_id": true,
+  "geolocation_optional": true,
+  "heading_optional": true,
+  "frames": []
+}
