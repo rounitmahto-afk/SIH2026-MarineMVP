@@ -45,6 +45,34 @@ class SSSIngestionManifest(BaseModel):
         return value
 
 
+class IngestionJobSummaryResponse(BaseModel):
+    id: int
+    status: str
+    modality: Literal["side_scan_sonar"]
+    source_id: str
+
+    pipeline_version: str
+    model_name: str
+    model_version: str
+
+    frame_count: int
+    processed_frame_count: int
+    detection_count: int
+
+    created_at: datetime
+    started_at: datetime | None
+    completed_at: datetime | None
+    error_message: str | None
+
+
+class IngestionJobListResponse(BaseModel):
+    items: list[IngestionJobSummaryResponse]
+    total: int
+    page: int
+    page_size: int
+    pages: int
+
+
 class IngestionJobStatusResponse(BaseModel):
     id: int
     status: str

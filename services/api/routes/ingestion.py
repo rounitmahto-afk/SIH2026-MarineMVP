@@ -3,8 +3,17 @@ import json
 import shutil
 from uuid import uuid4
 
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from fastapi import (
+    APIRouter,
+    Depends,
+    File,
+    HTTPException,
+    Query,
+    UploadFile,
+)
 from pydantic import ValidationError
+from sqlalchemy import func
+from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 from geoalchemy2.elements import WKTElement
 
@@ -16,8 +25,10 @@ from services.api.models import (
     SonarFrame,
 )
 from services.api.schemas.ingestion import (
+    IngestionJobListResponse,
     IngestionJobResponse,
     IngestionJobStatusResponse,
+    IngestionJobSummaryResponse,
     SSSIngestionManifest,
 )
 from services.api.services.ingestion import (
@@ -248,6 +259,116 @@ async def create_sss_ingestion_job(
             status_code=500,
             detail="SSS ingestion failed.",
         ) from exc
+
+
+@router.get(
+    "/jobs",
+    response_model=IngestionJobListResponse,
+)
+def list_sss_ingestion_jobs(
+    page: int = Query(default=1, ge=1),
+    page_size: int = Query(default=25, ge=1, le=100),
+    db: Session = Depends(get_db),
+) -> IngestionJobListResponse:
+    try:
+        total = (
+            db.query(
+                func.count(IngestionJob.id)
+            ).scalar()
+            or 0
+        )
+
+        rows = (
+            db.query(
+                IngestionJob.id,
+                IngestionJob.status,
+                IngestionJob.modality,
+                IngestionJob.source_id,
+                IngestionJob.pipeline_version,
+                IngestionJob.model_name,
+                IngestionJob.model_version,
+                func.count(
+                    func.distinct(SonarFrame.id)
+                ).label("frame_count"),
+                func.count(
+                    func.distinct(SonarFrame.id)
+                ).filter(
+                    SonarFrame.quality_index.is_not(None)
+                ).label("processed_frame_count"),
+                func.count(
+                    Detection.id
+                ).label("detection_count"),
+                IngestionJob.created_at,
+                IngestionJob.started_at,
+                IngestionJob.completed_at,
+                IngestionJob.error_message,
+            )
+            .outerjoin(
+                SonarFrame,
+                SonarFrame.job_id == IngestionJob.id,
+            )
+            .outerjoin(
+                Detection,
+                Detection.frame_id == SonarFrame.id,
+            )
+            .group_by(
+                IngestionJob.id,
+                IngestionJob.status,
+                IngestionJob.modality,
+                IngestionJob.source_id,
+                IngestionJob.pipeline_version,
+                IngestionJob.model_name,
+                IngestionJob.model_version,
+                IngestionJob.created_at,
+                IngestionJob.started_at,
+                IngestionJob.completed_at,
+                IngestionJob.error_message,
+            )
+            .order_by(IngestionJob.id.desc())
+            .offset((page - 1) * page_size)
+            .limit(page_size)
+            .all()
+        )
+
+    except SQLAlchemyError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="Ingestion job status temporarily unavailable.",
+        ) from exc
+
+    items = [
+        IngestionJobSummaryResponse(
+            id=row.id,
+            status=row.status,
+            modality=row.modality,
+            source_id=row.source_id,
+            pipeline_version=row.pipeline_version,
+            model_name=row.model_name,
+            model_version=row.model_version,
+            frame_count=row.frame_count,
+            processed_frame_count=row.processed_frame_count,
+            detection_count=row.detection_count,
+            created_at=row.created_at,
+            started_at=row.started_at,
+            completed_at=row.completed_at,
+            error_message=row.error_message,
+        )
+        for row in rows
+    ]
+
+    pages = (
+        (total + page_size - 1) // page_size
+        if total
+        else 0
+    )
+
+    return IngestionJobListResponse(
+        items=items,
+        total=total,
+        page=page,
+        page_size=page_size,
+        pages=pages,
+    )
 
 
 @router.get(
