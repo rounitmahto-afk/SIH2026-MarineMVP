@@ -105,6 +105,8 @@ def process_ingestion_job(
         frames_processed = 0
         detections_total = 0
         total_inference_ms = 0.0
+        total_preprocessing_ms = 0.0
+        total_evidence_ms = 0.0
         total_processing_ms = 0.0
 
         for frame in frames:
@@ -134,6 +136,12 @@ def process_ingestion_job(
 
             frames_processed += 1
             total_processing_ms += elapsed_ms
+            total_preprocessing_ms += (
+                result.preprocessing_ms
+            )
+            total_evidence_ms += (
+                result.evidence_ms
+            )
 
             detection_result = (
                 result.detection_result
@@ -228,13 +236,12 @@ def process_ingestion_job(
             total_inference_ms
         )
 
-        job.preprocessing_ms = max(
-            0.0,
-            total_processing_ms
-            - total_inference_ms,
+        job.preprocessing_ms = (
+            total_preprocessing_ms
         )
-
-        job.evidence_ms = None
+        job.evidence_ms = (
+            total_evidence_ms
+        )
         job.tracking_ms = None
 
         job.status = "succeeded"
