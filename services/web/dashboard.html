@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIH 2026 Marine Sonar Dashboard</title>
+    <link rel="stylesheet" href="/dashboard/static/dashboard.css">
+</head>
+<body>
+    <main class="shell">
+        <header class="header">
+            <div>
+                <p class="eyebrow">SIH 2026 - Side-Scan Sonar</p>
+                <h1>Marine Detection Monitor</h1>
+                <p class="subtitle">
+                    Live view of persisted ingestion and inference jobs.
+                </p>
+            </div>
+
+            <div class="header-meta">
+                <span id="connectionState" class="state state-idle">
+                    Connecting...
+                </span>
+                <span class="refresh-label">
+                    Auto-refresh: 5s
+                </span>
+            </div>
+        </header>
+
+        <section class="cards" aria-label="Dashboard summary">
+            <article class="card">
+                <span class="card-label">Total jobs</span>
+                <strong id="totalJobs">N/A</strong>
+            </article>
+
+            <article class="card">
+                <span class="card-label">Jobs on page</span>
+                <strong id="pageJobs">N/A</strong>
+            </article>
+
+            <article class="card">
+                <span class="card-label">Latest job</span>
+                <strong id="latestStatus">N/A</strong>
+            </article>
+        </section>
+
+        <section id="errorBanner" class="error-banner" hidden>
+            <strong>Backend unavailable.</strong>
+            <span id="errorMessage">
+                Job data could not be refreshed.
+            </span>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <div>
+                    <h2>Ingestion jobs</h2>
+                    <p id="lastUpdated">Waiting for first refresh...</p>
+                </div>
+
+                <button id="refreshButton" type="button">
+                    Refresh now
+                </button>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Status</th>
+                            <th>Source</th>
+                            <th>Frames</th>
+                            <th>Detections</th>
+                            <th>Model</th>
+                            <th>Created</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jobsBody">
+                        <tr>
+                            <td colspan="7" class="empty">
+                                Loading real job data...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <button id="previousButton" type="button" disabled>
+                    Previous
+                </button>
+
+                <span id="pageLabel">Page 1 of 0</span>
+
+                <button id="nextButton" type="button" disabled>
+                    Next
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/dashboard/static/dashboard.js" defer></script>
+</body>
+</html>
