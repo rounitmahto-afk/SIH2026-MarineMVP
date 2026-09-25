@@ -10,9 +10,14 @@ from geoalchemy2.elements import WKTElement
 
 from services.api.config import settings
 from services.api.db import get_db
-from services.api.models import IngestionJob, SonarFrame
+from services.api.models import (
+    Detection,
+    IngestionJob,
+    SonarFrame,
+)
 from services.api.schemas.ingestion import (
     IngestionJobResponse,
+    IngestionJobStatusResponse,
     SSSIngestionManifest,
 )
 from services.api.services.ingestion import (
@@ -243,3 +248,71 @@ async def create_sss_ingestion_job(
             status_code=500,
             detail="SSS ingestion failed.",
         ) from exc
+
+
+@router.get(
+    "/jobs/{job_id}",
+    response_model=IngestionJobStatusResponse,
+)
+def get_sss_ingestion_job_status(
+    job_id: int,
+    db: Session = Depends(get_db),
+) -> IngestionJobStatusResponse:
+    job = db.get(IngestionJob, job_id)
+
+    if job is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Ingestion job not found.",
+        )
+
+    frames = (
+        db.query(SonarFrame)
+        .filter(SonarFrame.job_id == job.id)
+        .order_by(SonarFrame.frame_index)
+        .all()
+    )
+
+    processed_frame_count = sum(
+        1
+        for frame in frames
+        if frame.quality_index is not None
+    )
+
+    detection_count = (
+        db.query(Detection)
+        .join(
+            SonarFrame,
+            Detection.frame_id == SonarFrame.id,
+        )
+        .filter(SonarFrame.job_id == job.id)
+        .count()
+    )
+
+    sequence_id = (
+        frames[0].sequence_id
+        if frames
+        else None
+    )
+
+    return IngestionJobStatusResponse(
+        id=job.id,
+        status=job.status,
+        modality=job.modality,
+        source_id=job.source_id,
+        source_checksum=job.source_checksum,
+        sequence_id=sequence_id,
+        pipeline_version=job.pipeline_version,
+        model_name=job.model_name,
+        model_version=job.model_version,
+        frame_count=len(frames),
+        processed_frame_count=processed_frame_count,
+        detection_count=detection_count,
+        started_at=job.started_at,
+        completed_at=job.completed_at,
+        preprocessing_ms=job.preprocessing_ms,
+        inference_ms=job.inference_ms,
+        evidence_ms=job.evidence_ms,
+        tracking_ms=job.tracking_ms,
+        error_message=job.error_message,
+    )
