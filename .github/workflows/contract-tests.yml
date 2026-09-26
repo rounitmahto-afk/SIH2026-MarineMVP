@@ -31,3 +31,6 @@ jobs:
 
       - name: Run SSS ingestion contract test
         run: python -m tests.sss_ingestion_contract_test
+
+      - name: Run SSS manifest validation test
+        run: python -m tests.sss_manifest_validation_test
