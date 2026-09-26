@@ -20,7 +20,6 @@ Verify:
     source .venv/bin/activate
     python -m pip install --upgrade pip
     pip install -r requirements-backend.txt
-    pip install opencv-python
 
 Verify OpenCV:
 
